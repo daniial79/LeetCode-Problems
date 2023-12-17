@@ -1,5 +1,12 @@
 package main
 
+import "fmt"
+
+func main() {
+	fmt.Println([]int{1, 2, 3, 4})
+	fmt.Println([]int{1, 1, 2, 3})
+}
+
 func containsDuplicate(nums []int) bool {
 	// Check for empty array
 	if len(nums) < 1 {
