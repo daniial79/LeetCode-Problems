@@ -1,4 +1,4 @@
-package main
+package arraysAndHashing
 
 func isValidSudoku(board [][]byte) bool {
 	for _, row := range board {

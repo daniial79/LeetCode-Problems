@@ -1,4 +1,4 @@
-package main
+package arraysAndHashing
 
 func groupAnagrams(strs []string) [][]string {
 	anagramBuckets := make(map[[26]int][]string)

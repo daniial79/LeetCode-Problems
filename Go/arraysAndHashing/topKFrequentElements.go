@@ -1,4 +1,4 @@
-package main
+package arraysAndHashing
 
 func topKFrequent(nums []int, k int) (res []int) {
 	countMap := map[int]int{}

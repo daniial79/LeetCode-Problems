@@ -1,4 +1,4 @@
-package main
+package arraysAndHashing
 
 func twoSum(nums []int, target int) []int {
 	var result [2]int

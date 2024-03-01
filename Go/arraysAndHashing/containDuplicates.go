@@ -1,4 +1,4 @@
-package main
+package arraysAndHashing
 
 func containsDuplicate(nums []int) bool {
 	// Check for empty array

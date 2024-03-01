@@ -1,4 +1,4 @@
-package main
+package arraysAndHashing
 
 func longestConsecutive(nums []int) int {
 	max_length := 0

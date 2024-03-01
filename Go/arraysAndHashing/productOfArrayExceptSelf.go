@@ -1,4 +1,4 @@
-package main
+package arraysAndHashing
 
 func productExceptSelf(nums []int) []int {
 	answer := make([]int, len(nums))
