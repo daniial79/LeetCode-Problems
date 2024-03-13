@@ -1,4 +1,4 @@
-def is_valid(self, s: str) -> bool:
+def is_valid(s: str) -> bool:
     stack = []
     for par in s:
         if is_closing(par):
@@ -18,10 +18,10 @@ def is_closing(par: str) -> bool:
     
 def are_paired(opening: str, closing: str) -> bool:
     if opening == "(":
-        return True if closing == ")" else False
+        return closing == ")"
     if opening == "[":
-        return True if closing == "]" else False
+        return closing == "]"
     if opening == "{":
-        return True if closing == "}" else False
+        return closing == "}"
     
         

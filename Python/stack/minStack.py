@@ -29,7 +29,6 @@ class MinStack:
             self.minimumTracker.append(val)
 
 
-    #BUG: pointer get None here :/
     def pop(self) -> None:
         if self.depth == 0:
             return None
