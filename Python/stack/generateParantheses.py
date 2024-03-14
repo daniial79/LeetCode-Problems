@@ -1,4 +1,4 @@
-def generateParenthesis(n: int) -> list[str]:
+def generate_parenthesis(n: int) -> list[str]:
     result = []
     
     def dfs(left: int, right: int, cargo: str) -> None:
