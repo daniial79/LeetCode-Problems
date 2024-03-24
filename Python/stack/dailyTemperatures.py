@@ -15,13 +15,13 @@ print(daily_temperatures_v0([73,74,75,71,69,72,76,73]))
 
 def daily_temperatures_v1(temperatures: list[int]) -> list[int]:
     result = [0] * len(temperatures)
-    stack = [] # (temp, index)
+    stack = [] # [temperature, index]
     
-    for ind, temp in enumerate(temperatures):
-        while stack and temp > stack[-1][0]:
-            stackTemp, stackInd = stack.pop()
-            result[ind] = ind - stackInd
-        stack.append(temp, ind)
-    return result    
+    for i, t in enumerate(temperatures):
+        while stack and stack[-1][0] < t :
+            _, stackI = stack.pop()
+            result[stackI] = i - stackI 
+        stack.append((t, i))
+    return result
 
 print(daily_temperatures_v1([73,74,75,71,69,72,76,73]))
